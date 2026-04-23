@@ -1,0 +1,169 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --link: #0066cc;
+  --border: #e5e5e5;
+  --max-width: 640px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-lang] {
+  display: none;
+}
+body.lang-en [data-lang="en"] {
+  display: revert;
+}
+body.lang-pt [data-lang="pt"] {
+  display: revert;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  font: inherit;
+  color: var(--muted);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+.lang-btn:hover {
+  color: var(--text);
+}
+.lang-btn.active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.lang-sep {
+  color: var(--border);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 96px 32px 64px;
+}
+
+header {
+  margin-bottom: 64px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: var(--muted);
+  margin: 0;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.info {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  row-gap: 10px;
+  column-gap: 24px;
+}
+
+.info dt {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.info dd {
+  margin: 0;
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 96px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 80px 20px 48px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+
+  .info dd {
+    margin-bottom: 8px;
+  }
+
+  .lang-toggle {
+    top: 16px;
+    right: 16px;
+  }
+}
