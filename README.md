@@ -8,4 +8,4 @@ Built with plain HTML, CSS, and JavaScript. Hosted on GitHub Pages.
 
 ## Contact
 
-berohlfs@gmail.com
+bernardo@bcr.tec.br
