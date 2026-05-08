@@ -3,67 +3,360 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BCR Technology</title>
-  <meta name="description" data-lang="en" content="BCR Technology — Brazilian technology company founded in 2024.">
-  <meta name="description" data-lang="pt" content="BCR Technology — Empresa brasileira de tecnologia fundada em 2024.">
+  <title>BCR Technology — Software done well. Shipped fast.</title>
+  <meta name="description" data-lang="en" content="BCR Technology — Brazilian software studio. AI-augmented development, fine architecture, and full transparency. Quality, speed, elegance.">
+  <meta name="description" data-lang="pt" content="BCR Technology — Estúdio de software brasileiro. Desenvolvimento aumentado por IA, arquitetura cuidadosa e total transparência. Qualidade, velocidade, elegância.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="lang-en">
-  <nav class="lang-toggle" aria-label="Language switcher">
-    <button type="button" data-set-lang="en" class="lang-btn">EN</button>
-    <span class="lang-sep">|</span>
-    <button type="button" data-set-lang="pt" class="lang-btn">PT</button>
-  </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="BCR Technology">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 3 C24 4 30 10 29 18 C28 26 21 30 14 28 C7 26 2 19 3 12 C4 7 10 3 16 3 Z" fill="#10b981" opacity="0.3"/>
+          <path d="M22 7 C28 9 30 17 25 22 C20 27 12 27 8 22 C4 17 6 11 11 8 C15 5 19 6 22 7 Z" fill="#10b981" opacity="0.55"/>
+          <path d="M11 12 C16 10 22 13 21 19 C20 25 13 26 9 22 C5 18 6 14 11 12 Z" fill="#047857" opacity="0.7"/>
+          <circle cx="23" cy="11" r="4.5" fill="#6ee7b7" opacity="0.9"/>
+          <circle cx="9" cy="22" r="2.2" fill="#064e3b" opacity="0.9"/>
+          <circle cx="25" cy="22" r="1.7" fill="#059669" opacity="0.75"/>
+        </svg>
+        <span class="brand-full">BCR Technology</span>
+        <span class="brand-short">BCR</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#services" data-lang="en">Services</a>
+        <a href="#services" data-lang="pt">Serviços</a>
+        <a href="#about" data-lang="en">About</a>
+        <a href="#about" data-lang="pt">Sobre</a>
+        <a href="#location" data-lang="en">Location</a>
+        <a href="#location" data-lang="pt">Localização</a>
+        <a href="#contact" data-lang="en">Contact</a>
+        <a href="#contact" data-lang="pt">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <nav class="lang-toggle" aria-label="Language switcher">
+          <button type="button" data-set-lang="en" class="lang-btn">EN</button>
+          <span class="lang-sep">|</span>
+          <button type="button" data-set-lang="pt" class="lang-btn">PT</button>
+        </nav>
+        <a href="#contact" class="btn btn-primary btn-sm header-cta" data-lang="en">Talk to us</a>
+        <a href="#contact" class="btn btn-primary btn-sm header-cta" data-lang="pt">Fale conosco</a>
+      </div>
+    </div>
+  </header>
 
-  <main>
-    <header>
-      <h1>BCR Technology</h1>
-      <p class="subtitle" data-lang="en">Brazilian technology company</p>
-      <p class="subtitle" data-lang="pt">Empresa brasileira de tecnologia</p>
-    </header>
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title" data-lang="en">
+          Modern software, made with <span class="accent">care</span>.
+        </h1>
+        <h1 class="hero-title" data-lang="pt">
+          Software moderno, feito com <span class="accent">cuidado</span>.
+        </h1>
 
-    <section>
-      <h2 data-lang="en">About</h2>
-      <h2 data-lang="pt">Sobre</h2>
-      <p data-lang="en">BCR Technology is a Brazilian software company building digital products and applications. We design and develop software focused on quality, simplicity, and usefulness.</p>
-      <p data-lang="pt">A BCR Technology é uma empresa brasileira de software que desenvolve produtos e aplicações digitais. Projetamos e desenvolvemos software com foco em qualidade, simplicidade e utilidade.</p>
+        <p class="hero-sub" data-lang="en">
+          We use modern tools and AI throughout the process to deliver more — without lowering the quality bar. Quality, speed, elegance, and full transparency about how we get there.
+        </p>
+        <p class="hero-sub" data-lang="pt">
+          Usamos ferramentas modernas e IA em todo o processo para entregar mais — sem baixar a régua de qualidade. Qualidade, velocidade, elegância e total transparência sobre como chegamos lá.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" data-lang="en">Talk to us</a>
+          <a href="#contact" class="btn btn-primary" data-lang="pt">Fale com a gente</a>
+          <a href="#services" class="btn btn-ghost" data-lang="en">What we focus on →</a>
+          <a href="#services" class="btn btn-ghost" data-lang="pt">No que focamos →</a>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2 data-lang="en">Company</h2>
-      <h2 data-lang="pt">Empresa</h2>
-      <dl class="info">
-        <dt data-lang="en">Legal name</dt>
-        <dt data-lang="pt">Razão social</dt>
-        <dd>BCR TECHNOLOGY LTDA ME</dd>
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-lang="en">Focus</span>
+          <span class="kicker" data-lang="pt">Foco</span>
+          <h2 data-lang="en">Where we put our attention.</h2>
+          <h2 data-lang="pt">Onde colocamos nossa atenção.</h2>
+          <p class="section-lead" data-lang="en">
+            Software designed and built with AI woven throughout the process — from architecture to delivery.
+          </p>
+          <p class="section-lead" data-lang="pt">
+            Software desenhado e construído com IA presente em todo o processo — da arquitetura à entrega.
+          </p>
+        </div>
 
-        <dt data-lang="en">Tax ID (CNPJ)</dt>
-        <dt data-lang="pt">CNPJ</dt>
-        <dd>57.027.382/0001-64</dd>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 7.5 12 12 3 7.5 12 3"/><polyline points="3 12 12 16.5 21 12"/><polyline points="3 16.5 12 21 21 16.5"/></svg>
+            </div>
+            <h3 data-lang="en">Architecture & engineering</h3>
+            <h3 data-lang="pt">Arquitetura & engenharia</h3>
+            <p data-lang="en">We start by designing how the software should be built — at the right scale, with the right tradeoffs. Cost-effective, maintainable, and ready to evolve.</p>
+            <p data-lang="pt">Começamos desenhando como o software deve ser construído — na escala certa, com os tradeoffs certos. Eficiente, manutenível e pronto para evoluir.</p>
+          </article>
 
-        <dt data-lang="en">Location</dt>
-        <dt data-lang="pt">Localização</dt>
-        <dd data-lang="en">Nova Lima, Minas Gerais, Brazil</dd>
-        <dd data-lang="pt">Nova Lima, Minas Gerais, Brasil</dd>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L13.5 9 L19.5 10.5 L13.5 12 L12 18 L10.5 12 L4.5 10.5 L10.5 9 Z"/><path d="M19 17 L19.7 19 L21.5 19.5 L19.7 20 L19 22 L18.3 20 L16.5 19.5 L18.3 19 Z" stroke-width="1.2"/></svg>
+            </div>
+            <h3 data-lang="en">AI-augmented development</h3>
+            <h3 data-lang="pt">Desenvolvimento aumentado por IA</h3>
+            <p data-lang="en">We use AI tools across the entire workflow to ship faster — without dropping the quality bar. Less boilerplate, more meaningful work.</p>
+            <p data-lang="pt">Usamos ferramentas de IA em todo o fluxo para entregar mais rápido — sem baixar a régua de qualidade. Menos boilerplate, mais trabalho que importa.</p>
+          </article>
 
-        <dt data-lang="en">Founder</dt>
-        <dt data-lang="pt">Fundador</dt>
-        <dd>Bernardo Cruz Rohlfs</dd>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><line x1="9" y1="3" x2="9" y2="6"/><line x1="15" y1="3" x2="15" y2="6"/><line x1="9" y1="18" x2="9" y2="21"/><line x1="15" y1="18" x2="15" y2="21"/><line x1="3" y1="9" x2="6" y2="9"/><line x1="3" y1="15" x2="6" y2="15"/><line x1="18" y1="9" x2="21" y2="9"/><line x1="18" y1="15" x2="21" y2="15"/></svg>
+            </div>
+            <h3 data-lang="en">AI in your product</h3>
+            <h3 data-lang="pt">IA no seu produto</h3>
+            <p data-lang="en">When AI fits the problem, we integrate it carefully — choosing the right model, the right pattern, and the right tradeoffs. Useful first, trendy never.</p>
+            <p data-lang="pt">Quando IA faz sentido para o problema, integramos com cuidado — escolhendo o modelo, o padrão e os tradeoffs certos. Útil primeiro, hype nunca.</p>
+          </article>
 
-        <dt data-lang="en">Founded</dt>
-        <dt data-lang="pt">Fundada em</dt>
-        <dd>2024</dd>
-      </dl>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><line x1="7.5" y1="12" x2="16.5" y2="12"/><polyline points="14 9 17 12 14 15"/></svg>
+            </div>
+            <h3 data-lang="en">End-to-end delivery</h3>
+            <h3 data-lang="pt">Entrega de ponta a ponta</h3>
+            <p data-lang="en">From the first sketch to a shipped product — built on modern foundations and the right architecture for the job at hand.</p>
+            <p data-lang="pt">Do primeiro rabisco a um produto entregue — sobre fundações modernas e a arquitetura certa para o que o projeto pede.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2 data-lang="en">Contact</h2>
-      <h2 data-lang="pt">Contato</h2>
-      <p><a href="mailto:bernardo@bcr.tec.br">bernardo@bcr.tec.br</a></p>
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="kicker" data-lang="en">About</span>
+          <span class="kicker" data-lang="pt">Sobre</span>
+          <h2 data-lang="en">Quality, speed, elegance — and full transparency about how we get there.</h2>
+          <h2 data-lang="pt">Qualidade, velocidade, elegância — e total transparência sobre como chegamos lá.</h2>
+          <p data-lang="en">
+            BCR Technology is a small software studio that takes engineering seriously — and uses every modern tool available, AI included, to ship more in less time. Founded in 2024 by Bernardo Cruz Rohlfs in Minas Gerais, Brazil.
+          </p>
+          <p data-lang="pt">
+            A BCR Technology é um pequeno estúdio de software que leva a engenharia a sério — e usa todas as ferramentas modernas disponíveis, incluindo IA, para entregar mais em menos tempo. Fundada em 2024 por Bernardo Cruz Rohlfs em Minas Gerais, Brasil.
+          </p>
+          <p data-lang="en">
+            We work directly with founders and product teams who want a transparent partner. We share what we're doing, why, and what it costs. We're open-minded and creative by default — and we like clients who want to think alongside us, not just sign off.
+          </p>
+          <p data-lang="pt">
+            Trabalhamos diretamente com fundadores e times de produto que querem um parceiro transparente. Compartilhamos o que estamos fazendo, por que e quanto custa. Somos abertos e criativos por natureza — e gostamos de clientes que querem pensar junto, não só aprovar o que entregamos.
+          </p>
+        </div>
+
+        <ul class="values">
+          <li>
+            <strong data-lang="en">Quality</strong>
+            <strong data-lang="pt">Qualidade</strong>
+            <span data-lang="en">Right-sized architecture, careful code, no shortcuts where they'd matter later.</span>
+            <span data-lang="pt">Arquitetura no tamanho certo, código cuidadoso, sem atalhos onde fariam falta depois.</span>
+          </li>
+          <li>
+            <strong data-lang="en">Speed</strong>
+            <strong data-lang="pt">Velocidade</strong>
+            <span data-lang="en">AI in the loop across the whole workflow — so we ship more in less time, without lowering the bar.</span>
+            <span data-lang="pt">IA presente em todo o fluxo de trabalho — para entregarmos mais em menos tempo, sem baixar a régua.</span>
+          </li>
+          <li>
+            <strong data-lang="en">Elegance</strong>
+            <strong data-lang="pt">Elegância</strong>
+            <span data-lang="en">Software that does what it says, simply. No bloat, no buzzwords, no excess.</span>
+            <span data-lang="pt">Software que faz o que promete, com simplicidade. Sem inchaço, sem buzzwords, sem excessos.</span>
+          </li>
+          <li>
+            <strong data-lang="en">Transparency</strong>
+            <strong data-lang="pt">Transparência</strong>
+            <span data-lang="en">You see what we're doing, what it costs, and why we chose what we chose.</span>
+            <span data-lang="pt">Você vê o que estamos fazendo, quanto custa e por que escolhemos o que escolhemos.</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <footer>
-      <p>&copy; <span id="year">2026</span> BCR Technology</p>
+    <section id="founder" class="section section-founder">
+      <div class="container founder-grid">
+        <div class="founder-portrait">
+          <img src="image-home-bernardo-rohlfs.webp" alt="Bernardo Cruz Rohlfs, founder of BCR Technology" loading="lazy" width="640" height="640">
+        </div>
+        <div class="founder-copy">
+          <span class="kicker" data-lang="en">Founder</span>
+          <span class="kicker" data-lang="pt">Fundador</span>
+
+          <h2 data-lang="en">Hi — I'm Bernardo.</h2>
+          <h2 data-lang="pt">Olá — eu sou o Bernardo.</h2>
+
+          <p data-lang="en">I'm a Software Engineer with a bachelor's in the field, and I founded BCR Technology in 2024. What I love most is designing and architecting software — and lately, applying AI to both the product itself and the way it gets built.</p>
+          <p data-lang="pt">Sou engenheiro de software com bacharelado na área, e fundei a BCR Technology em 2024. O que mais me motiva é desenhar e arquitetar software — e, hoje, aplicar IA tanto ao produto em si quanto ao jeito que ele é construído.</p>
+
+          <p data-lang="en">I'm hands-on by default. Every project we take on is one I personally work on — from architecture and code to the details that don't always make it into the brief. If we work together, you'll talk directly to the person writing the code.</p>
+          <p data-lang="pt">Sou hands-on por padrão. Em todo projeto que pegamos, eu trabalho pessoalmente — da arquitetura ao código, até os detalhes que nem sempre entram no briefing. Se trabalharmos juntos, você fala direto com quem está escrevendo o código.</p>
+
+          <p class="founder-sig">
+            <span data-lang="en">Bernardo Cruz Rohlfs · Founder</span>
+            <span data-lang="pt">Bernardo Cruz Rohlfs · Fundador</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="company" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-lang="en">Company</span>
+          <span class="kicker" data-lang="pt">Empresa</span>
+          <h2 data-lang="en">Official company information</h2>
+          <h2 data-lang="pt">Dados oficiais da empresa</h2>
+          <p class="section-lead" data-lang="en">
+            BCR Technology is a registered Brazilian company. Public records below.
+          </p>
+          <p class="section-lead" data-lang="pt">
+            A BCR Technology é uma empresa brasileira registrada. Registros públicos abaixo.
+          </p>
+        </div>
+
+        <dl class="info">
+          <div class="info-row">
+            <dt data-lang="en">Legal name</dt>
+            <dt data-lang="pt">Razão social</dt>
+            <dd>BCR TECHNOLOGY LTDA ME</dd>
+          </div>
+          <div class="info-row">
+            <dt data-lang="en">Tax ID (CNPJ)</dt>
+            <dt data-lang="pt">CNPJ</dt>
+            <dd>57.027.382/0001-64</dd>
+          </div>
+          <div class="info-row">
+            <dt data-lang="en">Location</dt>
+            <dt data-lang="pt">Localização</dt>
+            <dd data-lang="en">Nova Lima, Minas Gerais, Brazil</dd>
+            <dd data-lang="pt">Nova Lima, Minas Gerais, Brasil</dd>
+          </div>
+          <div class="info-row">
+            <dt data-lang="en">Phone</dt>
+            <dt data-lang="pt">Telefone</dt>
+            <dd><a class="info-link" href="tel:+5531999592002">+55 (31) 9 9959-2002</a></dd>
+          </div>
+          <div class="info-row">
+            <dt data-lang="en">Email</dt>
+            <dt data-lang="pt">E-mail</dt>
+            <dd><a class="info-link" href="mailto:bernardo@bcr.tec.br">bernardo@bcr.tec.br</a></dd>
+          </div>
+          <div class="info-row">
+            <dt data-lang="en">Founder</dt>
+            <dt data-lang="pt">Fundador</dt>
+            <dd>Bernardo Cruz Rohlfs</dd>
+          </div>
+          <div class="info-row">
+            <dt data-lang="en">Founded</dt>
+            <dt data-lang="pt">Fundada em</dt>
+            <dd>2024</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="location" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker" data-lang="en">Location</span>
+          <span class="kicker" data-lang="pt">Localização</span>
+          <h2 data-lang="en">Based in Belo Horizonte, Brazil.</h2>
+          <h2 data-lang="pt">Baseados em Belo Horizonte, Brasil.</h2>
+          <p class="section-lead" data-lang="en">A remote-first studio operating out of Minas Gerais. The pin below is a rough reference to the region we work from — not a public office address.</p>
+          <p class="section-lead" data-lang="pt">Um estúdio remote-first operando a partir de Minas Gerais. O marcador abaixo é uma referência aproximada da região em que trabalhamos — não um endereço público de escritório.</p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-info">
+            <div>
+              <span class="address-label" data-lang="en">Region</span>
+              <span class="address-label" data-lang="pt">Região</span>
+              <p class="address-line">
+                Savassi, Belo Horizonte<br>
+                <span data-lang="en">Minas Gerais, Brazil</span>
+                <span data-lang="pt">Minas Gerais, Brasil</span>
+              </p>
+            </div>
+            <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Savassi,+Belo+Horizonte+-+MG/@-19.932652,-43.9362051,15z">
+              <span data-lang="en">View region on Google Maps →</span>
+              <span data-lang="pt">Ver região no Google Maps →</span>
+            </a>
+          </div>
+
+          <div class="location-map">
+            <iframe
+              src="https://maps.google.com/maps?q=Savassi,+Belo+Horizonte+-+MG&z=15&output=embed"
+              title="BCR Technology operating region — approximate area in Belo Horizonte, Minas Gerais"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="container contact-inner">
+        <span class="kicker" data-lang="en">Talk to us</span>
+        <span class="kicker" data-lang="pt">Fale conosco</span>
+        <h2 data-lang="en">Got something to build?</h2>
+        <h2 data-lang="pt">Tem algo para construir?</h2>
+        <p class="section-lead" data-lang="en">
+          Tell us about it. We reply within a business day, share an honest take, and only take it on if we'd actually be the right fit.
+        </p>
+        <p class="section-lead" data-lang="pt">
+          Conta para a gente. Respondemos em até um dia útil, damos uma opinião honesta e só pegamos o projeto se realmente formos a melhor opção.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-lg" href="mailto:bernardo@bcr.tec.br?subject=Project%20inquiry%20%E2%80%94%20BCR%20Technology" data-lang="en">Email us</a>
+          <a class="btn btn-primary btn-lg" href="mailto:bernardo@bcr.tec.br?subject=Contato%20%E2%80%94%20BCR%20Technology" data-lang="pt">Enviar e-mail</a>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:bernardo@bcr.tec.br">bernardo@bcr.tec.br</a>
+            <span class="contact-sep" aria-hidden="true">·</span>
+            <a class="contact-link" href="tel:+5531999592002">+55 (31) 9 9959-2002</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="footer-brand-row">
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 3 C24 4 30 10 29 18 C28 26 21 30 14 28 C7 26 2 19 3 12 C4 7 10 3 16 3 Z" fill="#10b981" opacity="0.3"/>
+              <path d="M22 7 C28 9 30 17 25 22 C20 27 12 27 8 22 C4 17 6 11 11 8 C15 5 19 6 22 7 Z" fill="#10b981" opacity="0.55"/>
+              <path d="M11 12 C16 10 22 13 21 19 C20 25 13 26 9 22 C5 18 6 14 11 12 Z" fill="#047857" opacity="0.7"/>
+              <circle cx="23" cy="11" r="4.5" fill="#6ee7b7" opacity="0.9"/>
+              <circle cx="9" cy="22" r="2.2" fill="#064e3b" opacity="0.9"/>
+              <circle cx="25" cy="22" r="1.7" fill="#059669" opacity="0.75"/>
+            </svg>
+            <span class="brand-full">BCR Technology</span>
+          </span>
+          <span class="footer-tagline" data-lang="en">Modern software. From Brazil.</span>
+          <span class="footer-tagline" data-lang="pt">Software moderno. Do Brasil.</span>
+        </div>
+        <div class="footer-meta">
+          <p class="footer-contact">
+            <a href="mailto:bernardo@bcr.tec.br">bernardo@bcr.tec.br</a>
+            <span aria-hidden="true">·</span>
+            <a href="tel:+5531999592002">+55 (31) 9 9959-2002</a>
+          </p>
+          <p>BCR TECHNOLOGY LTDA ME · CNPJ 57.027.382/0001-64</p>
+          <p>&copy; <span id="year"></span> BCR Technology. <span data-lang="en">All rights reserved.</span><span data-lang="pt">Todos os direitos reservados.</span></p>
+        </div>
+      </div>
     </footer>
   </main>
 
